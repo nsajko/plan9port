@@ -20,6 +20,7 @@ mygetmcontext:
 	/* return 0 */
 	mov	r0, #0
 	mov	pc, lr
+.type mygetmcontext, function
 
 .globl mysetmcontext
 mysetmcontext:
@@ -39,3 +40,4 @@ mysetmcontext:
 	ldr	r14, [r0,#56]
 	ldr	r0, [r0]
 	mov	pc, lr
+.type mysetmcontext, function
